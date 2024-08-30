@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.4-->
+<PhoronixTestSuite>
+  <SuiteInformation>
+    <Title>flashloads</Title>
+    <Version>1.0.0</Version>
+    <TestType>System</TestType>
+    <Description>Benchmark CPU, memory, and disk</Description>
+    <Maintainer>Flashbots</Maintainer>
+  </SuiteInformation>
+  <Execute>
+    <Test>pts/fio-2.1.0</Test>
+    <Arguments>randread io_uring 1 4k unused 4 /fio</Arguments>
+    <Description>Type: Random Read - Engine: IO_uring - Direct: Yes - Block Size: 4KB - Job Count: 4 - Disk Target: Default Test Directory</Description>
+  </Execute>
+  <!-- <Execute>
+    <Test>pts/fio-2.1.0</Test>
+    <Arguments>randwrite io_uring 1 4k unused 4 /fio</Arguments>
+    <Description>Type: Random Write - Engine: IO_uring - Direct: Yes - Block Size: 4KB - Job Count: 4 - Disk Target: Default Test Directory</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/fio-2.1.0</Test>
+    <Arguments>read io_uring 1 4m unused 4 /fio</Arguments>
+    <Description>Type: Sequential Read - Engine: IO_uring - Direct: Yes - Block Size: 4MB - Job Count: 4 - Disk Target: Default Test Directory</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/fio-2.1.0</Test>
+    <Arguments>write io_uring 1 4m unused 4 /fio</Arguments>
+    <Description>Type: Sequential Write - Engine: IO_uring - Direct: Yes - Block Size: 4MB - Job Count: 4 - Disk Target: Default Test Directory</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/stream-1.3.4</Test>
+    <Arguments>Copy</Arguments>
+    <Description>Type: Copy</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/stream-1.3.4</Test>
+    <Arguments>Scale</Arguments>
+    <Description>Type: Scale</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/stream-1.3.4</Test>
+    <Arguments>Add</Arguments>
+    <Description>Type: Add</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/stream-1.3.4</Test>
+    <Arguments>Triad</Arguments>
+    <Description>Type: Triad</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/build-linux-kernel-1.16.0</Test>
+    <Arguments>defconfig</Arguments>
+    <Description>Build: defconfig</Description>
+  </Execute> -->
+</PhoronixTestSuite>
