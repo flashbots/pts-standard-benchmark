@@ -1,11 +1,11 @@
 FROM docker.io/library/ubuntu:24.04
 
 ARG PTS_VERSION=10.8.4
-ENV TEST_RESULTS_NAME=flashloads
-ENV OUTPUT_DIR=/test-results
+ENV NO_PHODEVI_CACHE=TRUE
 
-RUN apt-get update && apt-get -y install \
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install \
     curl \
+    libelf-dev \
     php-cli \
     php-xml \
     php-zip
@@ -24,5 +24,9 @@ RUN phoronix-test-suite install \
 COPY flashloads-suite-definition.xml /var/lib/phoronix-test-suite/test-suites/local/flashloads/suite-definition.xml
 COPY user-config.xml /etc/phoronix-test-suite.xml
 COPY entrypoint.sh /entrypoint.sh
+
+ENV TEST_RESULTS_NAME=flashloads-results
+ENV OUTPUT_DIR=/test-results
+ENV FORCE_TIMES_TO_RUN=3
 
 ENTRYPOINT ["/entrypoint.sh"]

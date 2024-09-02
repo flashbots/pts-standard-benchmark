@@ -13,7 +13,7 @@
     <Arguments>randread io_uring 1 4k unused 4 /fio</Arguments>
     <Description>Type: Random Read - Engine: IO_uring - Direct: Yes - Block Size: 4KB - Job Count: 4 - Disk Target: Default Test Directory</Description>
   </Execute>
-  <!-- <Execute>
+  <Execute>
     <Test>pts/fio-2.1.0</Test>
     <Arguments>randwrite io_uring 1 4k unused 4 /fio</Arguments>
     <Description>Type: Random Write - Engine: IO_uring - Direct: Yes - Block Size: 4KB - Job Count: 4 - Disk Target: Default Test Directory</Description>
@@ -52,5 +52,5 @@
     <Test>pts/build-linux-kernel-1.16.0</Test>
     <Arguments>defconfig</Arguments>
     <Description>Build: defconfig</Description>
-  </Execute> -->
+  </Execute>
 </PhoronixTestSuite>
