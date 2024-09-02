@@ -1,0 +1,29 @@
+flashloads-results
+docker testing on Ubuntu 24.04 LTS via the Phoronix Test Suite.
+
+ ,,"2 x 06"
+Processor,,2 x 06/8f (88 Cores / 176 Threads)
+Motherboard,,Google Compute Engine c3-standard-176
+Memory,,704GB
+Disk,,54GB nvme_card-pd + 6442GB nvme_card-pd
+OS,,Ubuntu 24.04 LTS
+Kernel,,6.8.0-1013-gcp (x86_64)
+Compiler,,GCC 13.2.0
+File-System,,overlayfs
+System Layer,,docker
+
+ ,,"2 x 06"
+"Flexible IO Tester - Type: Random Read - Engine: IO_uring - Direct: Yes - Block Size: 4KB - Job Count: 4 - Disk Target: Default Test Directory (MB/s)",HIB,12.9
+"Flexible IO Tester - Type: Random Read - Engine: IO_uring - Direct: Yes - Block Size: 4KB - Job Count: 4 - Disk Target: Default Test Directory (IOPS)",HIB,3289
+"Flexible IO Tester - Type: Random Write - Engine: IO_uring - Direct: Yes - Block Size: 4KB - Job Count: 4 - Disk Target: Default Test Directory (MB/s)",HIB,12.8
+"Flexible IO Tester - Type: Random Write - Engine: IO_uring - Direct: Yes - Block Size: 4KB - Job Count: 4 - Disk Target: Default Test Directory (IOPS)",HIB,3269
+"Flexible IO Tester - Type: Sequential Read - Engine: IO_uring - Direct: Yes - Block Size: 4MB - Job Count: 4 - Disk Target: Default Test Directory (MB/s)",HIB,231
+"Flexible IO Tester - Type: Sequential Read - Engine: IO_uring - Direct: Yes - Block Size: 4MB - Job Count: 4 - Disk Target: Default Test Directory (IOPS)",HIB,53
+"Flexible IO Tester - Type: Sequential Write - Engine: IO_uring - Direct: Yes - Block Size: 4MB - Job Count: 4 - Disk Target: Default Test Directory (MB/s)",HIB,230
+"Flexible IO Tester - Type: Sequential Write - Engine: IO_uring - Direct: Yes - Block Size: 4MB - Job Count: 4 - Disk Target: Default Test Directory (IOPS)",HIB,53
+"Stream - Type: Copy (MB/s)",HIB,204304.3
+"Stream - Type: Scale (MB/s)",HIB,193308.3
+"Stream - Type: Triad (MB/s)",HIB,223434.0
+"Stream - Type: Add (MB/s)",HIB,223561.7
+"Timed Linux Kernel Compilation - Build: defconfig (sec)",LIB,40.472
+

@@ -14,3 +14,5 @@ podman run --rm -it --security-opt=seccomp=unconfined \
 The suite includes tools to test disk (using [fio](https://fio.readthedocs.io/en/latest/fio_doc.html)), memory (using [stream](https://www.cs.virginia.edu/stream/)), and CPU (using a Linux Kernel compilation) performance.
 
 Upon the completion the benchmark will output the results to `$PTS_TEST_RESULTS_PATH`. It should contain both CSV and HTML formatted reports.
+
+Sample reports: [CSV](./sample/sample-report.csv), [HTML](./sample/sample-report.html).
